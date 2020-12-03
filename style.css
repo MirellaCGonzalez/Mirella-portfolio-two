@@ -1,0 +1,340 @@
+* {
+
+  box-sizing: border-box;
+}
+
+
+
+/*navigation bar*/
+
+h1 {
+ 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 52px;
+  color:#E0FAFA;
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+  text-shadow: 0px 0px 2px #000;
+
+}
+
+header {
+  background-color: #007C85;
+  
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #E0FAFA;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  
+}
+
+header nav ul li:last-child a {
+  margin-right: 25px; /*perhaps change this*/
+}
+
+
+
+
+@media all and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a {
+    font-size: 25px;
+  }
+
+  header nav ul li a:hover {
+    color: #6D0315;
+  }
+}
+
+
+
+#home{
+  display: flex;  
+  flex-direction: column;
+}
+.background-image  {
+  width: 100%;
+}
+
+/*applies font size to all paragraphs*/
+p {
+  font-size: 18px;
+}
+
+.first-background-image{
+ background: no-repeat;
+}
+
+
+
+/* profile picture */
+.profile-pic {
+  border-radius: 50px;  
+  width: 125px;
+  }
+
+  .second-background-image{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: -25px;
+
+  }
+
+
+.intro-section{
+  margin: 25px;
+  padding: 15px;
+
+}
+
+/*current skills list*/
+.diamond{
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 18px;
+
+}
+
+
+
+
+
+/* about me section */
+
+/* airplane picture */
+.scenary-airplane {
+width: 265px;
+height: 400px;
+
+
+}
+
+
+#about {   
+  background-color:  #E0FAFA;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+}
+
+.about-me-heading{
+  font-size: 25px;
+  padding-right:380px; 
+}
+
+
+
+/*about me paragraph*/
+.about-me, .about-me-heading {
+    margin: 25px;
+    padding: 15px;
+    /*text-align: justify;*/
+    color: #007C85;
+}
+
+/*body background color*/
+body {
+    background: #007C85;
+    color: #E0FAFA;
+}
+
+
+
+
+
+  /* styles the horizontal thermatic break*/
+ hr {
+     height: 5px;
+     border: 2px solid black;
+       /* size style color */
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+
+
+
+/*contact section*/
+
+/* removes the list numbers from list*/
+ol li{
+  list-style: none;
+  
+} 
+ol li a{
+  text-decoration: none;
+  font-size: 20px;
+
+}
+
+/*form*/
+form {
+ margin: 0;
+ 
+}
+
+
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+
+}
+
+form textarea {
+  height: 160px;
+}
+
+.button-holder {
+  text-align: center;
+ 
+}
+
+#contact {
+ display: flex;
+  flex-direction: column;
+  align-items: center; 
+ 
+}
+
+
+
+/* pseudo-class selectors for contact links*/
+/* colors passed */
+main a:link {
+  color:#FFFFFF;
+}
+
+main a:visited {
+  color: #FFFFFF;
+}
+
+main a:hover {
+  color:#E0FAFA;
+}
+
+main a:active {
+  color: #E0FAFA;
+}
+
+  /* footer */
+.copyright{
+    padding-top: 25px;
+    text-align: center;
+    border-top: 2px solid #E0FAFA;
+    background-color: #E0FAFA ;
+    color: #00AFB9;
+}
+
+
+/* Groups & Items  (Mobile First) */
+
+main img {
+  width: 100%;
+}
+
+
+ .group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  #portfolio {
+    padding: 0px 15px;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  .background-image {
+   background: center;
+  }
+
+  .profile-pic {
+    width: 250px;
+    }
+
+   .second-background-image{
+      margin-top: -100px;
+      margin-right: 50px;
+    
+    }
+
+    form{
+      width: 400px;
+      height: 350px;
+    }
+
+    p, ul {
+      font-size: 20px;
+    }
+    
+    #contact h3{
+      padding-right:380px;
+      
+    }
+
+    .scenary-airplane {
+      width: 400px;
+      height: 400px;
+      padding-bottom: 75px;
+      
+     
+     }
+   
+}
+
